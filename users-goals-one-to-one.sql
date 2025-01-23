@@ -46,7 +46,7 @@ SELECT * FROM goals;
     (3 rows)
 
 
-SELECT username, email FROM users
+SELECT username, goalname, email FROM users
 JOIN goals ON goals.user_id = users.userid;
 =>
     username |      email
